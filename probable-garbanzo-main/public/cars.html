@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="auithor" content="Arya Enrico">
+  <title>Challege-01</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg nav-font container-fluid background">
+    <div class="container">
+      <button class=" btn btn-border btn-logo" href="#" type="button">&nbsp;&nbsp;</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active nav-font" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link nav-font font " href="#our-service">Our Service</a>
+          </li>
+          <li class="nav-item mx-2">
+
+            <a class="nav-link nav-font font" href="#why-ous">Why Us</a>
+          </li>
+          <li class="nav-item mx-2">
+
+            <a class="nav-link nav-font font" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item mx-2 ">
+            <a class="nav-link nav-font font" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item mx-sm-0 px-2">
+            <button class="btn btn-register nav-font font btn-border">Register</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="background pt-3 section-header  ">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+
+          <div class=" col-12 col-lg-7  d-flex banner justify-content-lg-center">
+            <article>
+              <h2 class="banner-text font">
+                Sewa & Rental Mobil Terbaik di <br>
+                Kawasan (Lokasimu)
+              </h2>
+              <p class="font">
+                Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas <br> terbaik dengan harga
+                terjangkau. Selalu siap melayani kebutuhanmu <br> untuk sewa mobil selama 24 jam.
+              </p>
+              
+            </article>
+          </div>
+          <div class="col-12 col-lg-5 align-items-end flex-column  mt-auto container-img">
+           
+
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+       <section class="filter">
+            <div class="container cars-filter">
+             <div class="row">
+                  <div class="col-md-3 cars-background">
+                        <p class="select-title">Tipe Driver</p>
+                        <select class="form-select" aria-label="Default select example" id="tipeDriver">
+                          <option value="Lepas Kunci" selected>Lepas Kunci</option>
+                          <option value="Dengan Supir">Dengan Supir</option>
+                        </select>
+                  </div>
+          
+                  <div class="col-md-2 cars-background">
+                            <p class="select-title">Tanggal</p>
+                            <input type="date" id="tanggal" name="trip-start" class="form-control" >
+                           
+                   </div>
+          
+          
+                  <div class="col-md-2 cars-background">
+                            <p class="select-title">Waktu jemput /Ambil</p>
+                            <input type="time" id="waktu" name="appt" class="form-control" value="10:00">
+                   </div>
+          
+                  <div class="col-md-3 cars-background">
+                            <p class="select-title">Jumlah Penumpang (optional)</p>
+                            <input type="text" class="form-control icon-rtl " id="penumpang" placeholder="Jumlah Penumopang">
+                   </div>
+
+                   <div class="col-md-2 cars-background ">
+                        <button type="button" class=" btn font btn-second btn-border btn-car-filter" id="filter">Cari Mobil</button>     
+               </div>
+
+          
+                      
+                    </div>
+                  </div>
+                </section>
+
+                <section class="filter-car">
+                  <div class="container">
+                    <div class="row" id="container-car">
+                      
+                    </div>
+                  </div>
+                </section>
+      
+      
+    </main>
+
+  <footer>
+    <div class="container section-footer">
+      <div class="row">
+        <div class="col-md-8 col-lg-4 ">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p>binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+
+        </div>
+        <div class=" col-md-4 col-lg-2 footer-bold ">
+          <p>Our Services</p>
+          <p>Why Us</p>
+          <p>Testimonial</p>
+          <p>FAQ</p>
+
+        </div>
+        <div class=" col-md-8 col-lg-4 ">
+          <p>Connect with us</p>
+          <div class="d-flex ">
+            <img src="images/icon_facebook.png" alt="facebook" class="footer-img">
+            <img src="images/icon_instagram.png" alt="instagram" class="footer-img">
+            <img src="images/icon_twitter.png" alt="twitter" class="footer-img">
+            <img src="images/icon_mail.png" alt="email" class="footer-img">
+            <img src="images/icon_twitch.png" alt="twitch" class="footer-img">
+          </div>
+
+        </div>
+
+        <div class=" col-md-4 col-lg-2 copy-right-footer">
+          <p>Copyright Binar 2022</p>
+          <button class=" btn-footer btn-border">&nbsp;</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            breakpoints:{
+                
+            }
+        });
+    </script>
+
+<script type="text/javascript" src="./scripts/binar.js"></script>
+<script type="text/javascript" src="./scripts/app.example.js"></script>
+<script type="text/javascript" src="./scripts/car.example.js"></script>
+<script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>

@@ -43,13 +43,29 @@ class Car {
 
   render() {
     return `
-      <div>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>type driver: <b>${this.typeDriver}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
-    `;
+            <img class="card-img-top img-filter" src="${this.image}" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Nama tipe mobil</h5>
+            <p class="card-text harga-sewa">${this.typeDriver}</p>
+            <p class="cars-description">${this.availableAt}</p>
+                
+              <div class="description-more">
+                 <div class="penumpang d-flex" style="border: 3px solid green;">
+                      <img src="images/fi_users.png" alt="jumlah penumpang" width="18px" height="18px">
+                            <p class="ms-3">${this.capacity} Orang</p>
+                  </div>
+
+                  <div class="penumpang d-flex" style="border: 3px solid green;">
+                      <img src="images/fi_settings.png" alt="jumlah penumpang" width="18px" height="18px">
+                      <p class="ms-3">${this.transmission}</p>
+                  </div>
+                  <div class="penumpang d-flex" style="border: 3px solid green;">
+                      <img src="images/fi_calendar.png" alt="jumlah penumpang" width="18px" height="18px">
+                      <p class="ms-3">Tahun${this.year}</p>
+                  </div>
+               </div>
+                  <button class="btn btn-success btn-car-filter" type="button">Pilih Mobil</button>
+               </div>
+       `;
   }
 }
