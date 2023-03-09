@@ -21,8 +21,7 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
-      node.setAttribute("class", "card");
-      node.setAttribute("class", "col-md-4");
+      setAttributes(node, {"class": "card col-md-4 container-card"});
       node.style.width ="18rem";
       node.innerHTML = car.render();
       this.carContainerElement.appendChild(node);
@@ -39,17 +38,11 @@ class App {
     const waktu = document.getElementById("waktu").value;
 
     let jam =waktu.split(":",1);
+    console.info(penumpang);
     
   
     const cars = await Binar.listCars((e)  => {
-      
-
-      
-     
-      return e.typeDriver == driver && compareDate(tanggal,e.availableAt,jam[0]);
-   
-    
-      
+      return e.typeDriver == driver && compareDate(tanggal,e.availableAt,jam[0]) && e.capacity >= penumpang;
     });
     console.log(cars);
     Car.init(cars);
@@ -57,8 +50,7 @@ class App {
    
     Car.list.forEach((car) => {
       const node = document.createElement("div");
-      node.setAttribute("class", "card");
-      node.setAttribute("class", "col-md-4");
+      setAttributes(node, {"class": "card col-md-4 container-card"});
       node.style.width ="18rem";
       node.innerHTML = car.render();
 
@@ -93,5 +85,11 @@ class App {
   function compareDate(param1,param2,jam){
     let data1 = new Date (param1);
     let data2 = new Date(param2);
-    return (data1.getFullYear() ==  data2.getFullYear() && data1.getMonth() ==  data2.getMonth() && data1.getDate() ==  data2.getDate()) && (parseInt(jam) <= data2.getHours()) ;
+    return (data1.getFullYear() <=  data2.getFullYear() && data1.getMonth() <=  data2.getMonth() && data1.getDate() <=  data2.getDate()) && (parseInt(jam) <= data2.getHours()) ;
+}
+
+function setAttributes(el, attrs) {
+  for(var key in attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
 }

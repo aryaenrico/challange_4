@@ -397,8 +397,15 @@ button.nav-font.font{
     }
   
   
-    .description-more .btn-car-filter{
-        width: 285px;
+    .btn-car-filter{
+        width: 90%;
+        background-color: #5CB85F;
+       color: white;
+      border-radius: 4px;
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
     }
     
   
@@ -417,7 +424,24 @@ button.nav-font.font{
       background: url("../images/fi_users.png") no-repeat right;
       background-size: 20px;
     }
-  
+    .container-card{
+      margin-left: 30px;
+      min-height: 1050px;
+      margin-top: 30px;
+    }
+
+    .img-filter-container{
+      max-width: 600px;
+      height: 450px;
+    }
+
+    .img-filter-container img{
+      width: 100%;
+      height: 100%;
+    }
+  .card-body-height{
+      height: 400px;
+  }
 
   /* owl css */
 .owl-nav{
